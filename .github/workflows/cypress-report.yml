@@ -15,10 +15,12 @@ runs-on: ubuntu -18.04
 container: cypress/browsers:node12.18.0-chrome142-ff77 
 steps:
 - uses: actions/checkout@v2
-- name: Install cypress and verify run:
+- name: Install cypress and verify 
+run:
 npm ci
 $(npm bin)/cypress verify
-- name: Run Cypress tests run: pm run test:chrome continue-on-error: false
+- name: Run Cypress tests run: pm 
+run test:chrome continue-on-error: false
 - name: Copy test execution videos and screenshots 
 run: | 
 mkdir public
