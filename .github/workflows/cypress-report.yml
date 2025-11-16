@@ -12,7 +12,8 @@ jobs:
 cypress-test:
 name: Run on Chrome 142
 runs-on: ubuntu -18.04
-container: cypress/browsers:node12.18.0-chrome142-ff77 steps:
+container: cypress/browsers:node12.18.0-chrome142-ff77 
+steps:
 - uses: actions/checkout@v2
 - name: Install cypress and verify run:
 npm ci
