@@ -1,5 +1,5 @@
 describe ('assertionSuite' , ()=>{ //suite 1
-    it('T1', ()=>{ //test1
+    it('T1', ()=>{ //test2
         
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         cy.title().should('eq',"OrangeHRM")
