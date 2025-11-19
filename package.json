@@ -12,6 +12,9 @@
     "cypress": "^11.2.0"
   },
   "devDependencies": {
-    "cypress-xpath": "^2.0.1"
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0"
   }
 }

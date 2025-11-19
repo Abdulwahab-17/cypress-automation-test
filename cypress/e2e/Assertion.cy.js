@@ -1,3 +1,5 @@
+import 'cypress-mochawesome-reporter/lib/addContext';
+
 describe ('assertionSuite' , ()=>{ //suite 1
     it('T1', ()=>{ //test2
         
@@ -13,9 +15,6 @@ describe ('assertionSuite' , ()=>{ //suite 1
 
         cy.get('[name="username"]').type('Admin')
         cy.get('[name="username"]').should('have.value','Admin')
-
-        //Explicit Assertions
-        //-> expect support BDD or assert support TDD
     }
     )
 
